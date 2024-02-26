@@ -1,0 +1,8 @@
+
+t
+java:S1488"YImmediately return this expression instead of assigning it to the temporary variable "c".(ûşœĞøÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚™óş
+?
+java:S1948"$Make "em" transient or serializable.(‘æ¿Úúÿÿÿÿ
+m
+java:S1128"RRemove this unused import 'ec.edu.ups.practicaMicroserviciosDocker.model.Cliente'.(š¤¥úÿÿÿÿ

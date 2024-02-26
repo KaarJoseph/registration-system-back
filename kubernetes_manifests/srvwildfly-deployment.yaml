@@ -1,0 +1,59 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f docker-compose.yml -o kubernetes_manifests/
+    kompose.version: 1.31.2 (a92241f79)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: srvwildfly
+  name: srvwildfly
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: srvwildfly
+  strategy: {}
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f docker-compose.yml -o kubernetes_manifests/
+        kompose.version: 1.31.2 (a92241f79)
+      creationTimestamp: null
+      labels:
+        io.kompose.network/pruebadockeryjakarta-main-datalogger-net: "true"
+        io.kompose.service: srvwildfly
+    spec:
+      containers:
+        - args:
+            - /opt/jboss/wildfly/bin/standalone.sh
+            - -b
+            - 0.0.0.0
+            - -c
+            - standalone.xml
+            - -bmanagement
+            - 0.0.0.0
+            - --debug
+            - '*:8787'
+          env:
+            - name: TZ
+              value: America/Guayaquil
+          image: andruco29/backendms
+          name: srvwildfly
+          ports:
+            - containerPort: 8080
+              hostPort: 8080
+              protocol: TCP
+            - containerPort: 8009
+              hostPort: 8899
+              protocol: TCP
+            - containerPort: 9990
+              hostPort: 9992
+              protocol: TCP
+            - containerPort: 8787
+              hostPort: 8787
+              protocol: TCP
+          resources: {}
+      hostname: srvwildfly
+      restartPolicy: Always
+status: {}

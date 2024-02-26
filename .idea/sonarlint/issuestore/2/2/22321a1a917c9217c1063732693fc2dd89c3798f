@@ -1,0 +1,13 @@
+
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(÷Õ÷Ÿ
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¼ğÆÿşÿÿÿÿ
+[	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(îÉşƒ
+[	java:S112+"FDefine and throw a dedicated exception instead of using a generic one.(…ÊïÇ
+`	java:S1122"FDefine and throw a dedicated exception instead of using a generic one.(®ÿÿÿÿÿ
+[	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(ß‡ØÔ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(øÑƒé
+V
+java:S1117)";Rename "bandera" which hides the field declared at line 14.(Üåî»ıÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(çı©ıÿÿÿÿ
+N	java:S106H"9Replace this use of System.out or System.err by a logger.(ä™×ú
+N	java:S106K"9Replace this use of System.out or System.err by a logger.(ä™×ú
